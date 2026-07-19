@@ -1,0 +1,400 @@
+/* большие мониторы */
+@media (max-width: 1400px) {
+    .nav-content .nav-links {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+
+        left: 120px;
+        top: 38px;
+
+        transition: 1.5s ease;
+    }
+
+}
+
+/* ноуты */
+@media (max-width: 1200px) {
+    .carousel-content > div {
+        flex: 0 0 calc((100% - 40px) / 3);
+        max-width: 382px;
+        min-width: 270px;
+        width: 100%;
+        height: clamp(330px, 35vw, 413px);
+    }
+
+    .blog-latestphoto-carousel .blog-latestphoto-carousel-content > div {
+        flex: 0 0 calc((100% - 40px) / 3);
+        max-width: 342px;
+        min-width: 210px;
+        width: 100%;
+    }
+
+    .blog-latestph-carou-content-info > div {
+        flex: 0 0 calc((100% - 40px) / 3);
+        max-width: 342px;
+        min-width: 210px;
+        width: 100%;
+    }
+}
+
+/* планшет горизонтально */
+@media (max-width: 1024px) {
+
+    .nav-content .nav-links {
+        margin: 0;
+        z-index: 2;
+
+        top: 150px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+
+    .header-content-front .header-text {
+        margin-top: 180px;
+    }
+
+    .destinations-content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+    }
+
+    .destinations-content .dest-cont-one {
+        align-self: center;
+    }
+
+    .dest-cont-one-links {
+        align-self: center;
+    }
+
+    .destinations-content .dest-cont-two {
+        margin: 0;
+    }
+
+    .destinations-content .dest-cont-three {
+        align-self: center;
+    }
+
+    .packages-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .packages-content .packages-content--tourpackages {
+        grid-column:  1 / -1;
+        width: 100%;
+        height: 250px;
+    }
+
+    .packages-content .packages-content--tourone {
+        margin-left: auto;
+
+        max-width: 436px;
+    }
+
+    .packages-content .packages-content--tourtwo {
+        margin-right: auto;
+
+        max-width: 436px;
+    }
+
+    .packages-information .packages-information--tutorial {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .packages-information--tutorial > div {
+        column-gap: 15px;
+    }
+
+    .packages-information--tutorial > div > h2, h3 {
+        margin-top: 20px;
+    }
+
+    .blog-info {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .blog-info .blog-info--additionally .additionally--button {
+        margin: clamp(50px, 10vw, 100px) auto 20px 0;
+    }
+
+    .blog-info .blog-info--phot {
+        justify-self: center;
+
+        height: 385px;
+    }
+
+}
+
+@media (max-width: 980px) {
+    .carousel-content > div {
+        flex: 0 0 calc((100% - 20px) / 2);
+        max-width: 421px;
+        min-width: 330px;
+        width: 100%;
+        height: clamp(430px, 53vw, 500px);
+    }
+
+    .blog-latestphoto-carousel .blog-latestphoto-carousel-content > div {
+        flex: 0 0 calc((100% - 20px) / 2);
+        max-width: 421px;
+        min-width: 210px;
+        width: 100%;
+    }
+
+    .blog-latestph-carou-content-info > div {
+        flex: 0 0 calc((100% - 20px) / 2);
+        max-width: 421px;
+        min-width: 210px;
+        width: 100%;
+    }
+}
+
+/* планшет вертикально */
+@media (max-width: 768px) {
+
+    .nav-content .logo {
+        margin-right: 10px;
+    }
+
+   .header-content .title-one {
+        margin-left: 15px;
+    }
+
+    .header-content-front .title-two {
+        margin-left: 10px;
+    }
+
+    .header-content-front .header-text {
+        margin-top: 250px;
+    }
+
+    .header-content-front .header-text > span {
+        margin: 0;
+    }
+
+    .header-text .header-btns {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .carousel-content > div {
+        flex: 0 0 calc(100% - 20px);
+        max-width: none;
+        min-width: 0;
+        width: 100%;
+
+        max-height: 600px;
+        min-height: 400px;
+        height: 100%;
+    }
+
+    .packages-content {
+        grid-template-columns: 1fr;
+    }
+
+        .packages-content .packages-content--tourone {
+        margin: 0;
+
+        max-width: 636px;
+        width: 100%;
+    }
+
+    .packages-content .packages-content--tourtwo {
+        margin: 0;
+
+        max-width: 636px;
+        width: 100%;
+    }
+
+    .blog-latestphoto {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+
+    .blog-latestphoto h2 {
+        text-align: center;
+    }
+
+    .blog-latestphoto h3 {
+        margin: 0;
+    }
+
+    .blog-latestphoto-carousel .blog-latestphoto-carousel-content {
+        gap: 21px;
+    }
+
+    .blog-latestphoto-carousel .blog-latestphoto-carousel-content > div {
+        flex: 0 0 calc(100% - 20px);
+        max-width: 663px;
+        min-width: 210px;
+        width: 100%;
+
+        aspect-ratio: 4 / 2.5;
+    }
+
+    .blog-latestph-carou-content-info {
+        gap: 21px;
+        padding-left: 20px;
+    }
+
+    .blog-latestph-carou-content-info > div {
+        flex: 0 0 calc(100% - 20px);
+        max-width: 663px;
+        min-width: 210px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .dest-cont-one h1 {
+        font-size: clamp(16px, 4vw, 26px);
+
+        line-height: clamp(23px, 5vw, 35px);
+    }
+
+    .blog-info .blog-info--phot {
+        min-height: 220px;
+    }
+
+}
+
+@media (max-width: 531px) {
+    .nav-content .nav-burger {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+
+        top: 120px;
+        right: 20px;
+    }
+
+    .nav-content .nav-links {
+        flex-direction: column;
+        align-items: normal;
+
+        gap: 3px;
+        margin: 0;
+        width: 80%;
+
+        z-index: 2;
+
+        top: 96px;
+        left: -50%;
+
+        transition: left 1s ease;
+    }
+
+    .nav-content .nav-links.active {
+        left: 35%;
+    }
+
+    .nav-content .nav-links.close {
+        left: -50%;
+    }
+
+    .nav-content .nav-links li {
+        padding: 10px 0 10px 16px;
+        border-radius: 10px;
+    }
+
+    .nav-content .nav-links li:hover {
+        background-color: #f6f6f6;
+    }
+
+    .nav-content .wrap-search-inp {
+        min-width: 50px;
+    }
+
+    .packages-information--tutorial > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .packages-information--tutorial > div > h2, h3 {
+        margin-top: 0;
+    }
+}
+
+/* телефоны */
+@media (max-width: 480px) {
+       .header-content .title-one {
+        margin-left: 15px;
+    }
+
+    .header-content-front .title-two {
+        margin-left: 10px;
+    }
+
+    .header-content-front .header-text {
+        margin-top: 240px;
+    }
+
+    .header-content-front .header-text > span {
+        margin: 10px 0 0 0;
+    }
+
+    .header-text .header-btns {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .dest-cont-two .dest-cont-two--local,
+    .dest-cont-two .dest-cont-two--booking,
+    .dest-cont-two .dest-cont-two--support {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dest-cont-three--smile h3,
+    .dest-cont-three--check h3,
+    .dest-cont-three--map h3 {
+        margin-top: 15px;
+    }
+
+    .dest-cont-three--smile h4,
+    .dest-cont-three--check h4,
+    .dest-cont-three--map h4 {
+
+        margin-top: 10px;
+    }
+
+    .packages-content .packages-content--tourpackages .packages-content--tourpackages-btn {
+        padding: 0px 25px;
+        font-size: 14px;
+    }
+
+    .packages-content {
+        padding: 0 clamp(20px, 5vw, 50px);
+    }
+
+    .packages-information {
+        padding: 0 clamp(20px, 5vw, 50px);
+    }
+
+    .packages-information .packages-information--firsttitle {
+        text-align: center;
+        font-size: clamp(18px, 4vw, 22px);
+    }
+
+}
+
